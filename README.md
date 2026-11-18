@@ -111,7 +111,7 @@ Open `SnackbarDemo.slnx` (Visual Studio 2022 17.13+) or run `dotnet run` inside 
 ## 📁 Project Structure
 
 ```
-SnackbarDemo/
+sb-snackbar/
 ├── SnackbarDemo.slnx        Solution file
 ├── SnackbarDemo.csproj      net10.0-windows, Windows Forms
 ├── Program.cs               Entry point
