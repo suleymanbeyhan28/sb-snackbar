@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <!-- Disabled so System.Windows.Forms.Timer is not ambiguous with System.Threading.Timer -->
+    <ImplicitUsings>disable</ImplicitUsings>
+    <ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
+    <ApplicationIcon>AppIcon.ico</ApplicationIcon>
+    <RootNamespace>SBNotepad.UI</RootNamespace>
+    <AssemblyName>SnackbarDemo</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- State icons are embedded and loaded by StateIcons.Load("success.png") etc. -->
+    <EmbeddedResource Include="Icons\*.png" LogicalName="Icons.%(Filename)%(Extension)" />
+  </ItemGroup>
+
+</Project>
